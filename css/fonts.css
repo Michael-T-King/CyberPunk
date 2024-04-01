@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Roboto;
+  src:
+    url(../fonts/Roboto-400.ttf) format('ttf'),
+    url(../fonts/Roboto-300.ttf) format('ttf'),
+    url(../fonts/Roboto-700.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Archangelsk;
+  src: url(../fonts/Archangelsk.ttf) format('ttf');
+}
+

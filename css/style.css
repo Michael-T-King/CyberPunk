@@ -1,0 +1,873 @@
+.header {
+top: 0;
+}
+
+.header__img {
+  display: none;
+  position: absolute;
+  max-width:1920px;
+  height: 1000px;
+  object-position: center;
+  object-fit: cover;
+  overflow-x: hidden;
+  top: 0;
+}
+
+.show {
+  display: block;
+}
+
+.header__container {
+  position: relative;
+  height: 1000px;
+}
+.header__block {
+position: relative;
+display: flex;
+  height: 74px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.header__logo {
+  position: absolute;
+  width: 296px;
+  height: 74px;
+  left: 0;
+}
+
+.nav {
+display: flex;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 0;
+}
+
+.nav__list {
+  display: flex;
+  position: relative;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav__link-img {
+  height: 30px;
+  width: 30px;
+}
+
+.title-block {
+  position: absolute;
+display: block;
+clip-path: polygon(50px 0,100% 0,100% calc(100% - 50px), calc(100% - 50px) 100%,0 100%,0 50px);
+width: 624px;
+height: 369px;
+background-color: #F8F200;
+bottom: 20px;
+right: 0;
+transition: clip-path 0.5s ease;
+}
+
+.title-block:hover {
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0%);
+}
+
+.title-block__text {
+display: block;
+font-family: Archangelsk;
+font-size: 62px;
+padding: 70px 70px 24px 70px;
+}
+
+.title-block__btn {
+  display: block;
+  padding: 12px 50px;
+  height: 78px;
+  width: 272px; 
+background-color: #000;
+  color: #F8F200;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 166.667% */
+  text-wrap: nowrap;
+  margin-left: 70px;
+cursor: pointer;
+}
+
+.title__text-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+   }
+
+.title__text {
+  display: block;
+  margin-top: 50px;
+  color: #000;
+font-family: Archangelsk;
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-wrap: wrap;
+}
+
+.discription__container {
+  display: block;
+  width: 952px;
+  height: 125px;
+  margin-top: 25px;
+}
+
+.discription__cyberpunk-link {
+  display: inline;
+  color: #52BEDC;
+text-decoration: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 188.889% */
+}
+
+.discription__text {
+  color: #777;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+}
+
+.img__container {
+  display: flex;
+  position: relative;
+  height: 424px;
+  width: 100%;
+  gap: 32px;
+  margin-top: 70px;
+}
+
+.img__container-small {
+  display: flex;
+  position: relative;
+flex-direction: column;
+  gap: 32px;
+}
+
+.small__img {
+  width: 460px;
+  height: 196px;
+  clip-path: polygon(50px 0,100% 0,100% calc(100% - 50px), calc(100% - 50px) 100%,0 100%,0 50px);
+  transition: clip-path 0.5s ease;
+}
+
+.small__img:hover {
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0%);
+}
+
+.big__img {
+  display: flex;
+  position: relative;
+  width: 788px;
+height: 424px;
+clip-path: polygon(50px 0,100% 0,100% calc(100% - 50px), calc(100% - 50px) 100%,0 100%,0 50px);
+transition: clip-path 0.5s ease;
+}
+
+.big__img:hover {
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0%);
+}
+
+.background__black-white {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.play-and-win {
+position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 814px;
+  top: -4px;
+}
+
+.promoution__img {
+  position: relative;
+  top: 15px;
+  width: 132px;
+height: 132px;
+stroke-width: 4px;
+stroke: #F8F200;
+}
+
+.promoution__name {
+  color: #F8F200;
+position: absolute;
+top: 65px;
+left: 28px;
+  font-family: Archangelsk;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: rotate(-45deg);
+}
+
+.promoution__title {
+display: inline-flex;
+  position: relative;
+  color: #FFF;
+font-family: Archangelsk;
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+left: 30px;
+top: -13px;
+}
+
+.discription-black {
+width: 952px;
+height: 91px; 
+position: relative;
+color: #fff;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 188.889% */
+margin-top: 25px;
+}
+
+.discription-black__cyberpunk,
+.discription-black__xbox,
+.discription-black__playstation {
+  color: #52BEDC;
+  text-decoration: none;
+}
+
+.section__black {
+  display: flex;
+  position: relative;
+  top: 98px;
+}
+
+.form {
+position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+
+  color: #fff;
+}
+
+#name,
+#email {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #fff;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #777;
+margin-bottom: 35px;
+padding-bottom: 13px;
+}
+
+
+
+.add-button {
+  display: block;
+  position: relative;
+}
+
+.add-screan {
+  display: inline-flex;
+  position: relative;
+  width: 460px;
+  height: 120px;
+  margin-bottom: 35px;
+  appearance: none; /* Убирает стандартный стиль кнопки */
+  cursor: pointer; 
+  background-image: url(../img/rectangle.svg);
+}
+
+.add-screan::-webkit-file-upload-button {
+  visibility: hidden; /* Скрывает стандартную кнопку в Chrome и Safari */
+}
+
+.add-screan::before {
+  content: ''; /* Символ перевода строки добавлен между строками */
+  display: inline-flex;
+  position: relative;
+  background-color: transparent;
+  width: 460px;
+  height: 120px;
+
+
+}
+
+.add-screan::after {
+  content: 'Прикрепить скриншот';
+  display: inline-flex;
+  position: absolute;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
+  width: 460px;
+  height: 120px;
+  left: 0;
+  justify-content: center;
+  top: 30%;
+}
+
+.formats-files {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 42%;
+  color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+cursor: pointer;
+}
+
+.send-button {
+  display: inline-block;
+  width: 192px;
+height: 59px;
+padding: 15px 50px;
+align-items: center;
+background: #F8F200;
+color: #000;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.agreement__container {
+  position: relative;
+  display: flex;
+  margin-top: 14px;
+}
+
+.agreement {
+border: 1px solid #777;
+  width: 14px;
+height: 14px;
+background-color: #000;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid 777; /* Цвет границы флажка */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+input[type="checkbox"]:checked {
+  background-image:url(../img/Check.svg);
+  background-size: cover;
+  border: none;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+.agreement__text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 11px;
+}
+
+.images-of-game-box {
+  display: flex;
+  position: relative;
+  margin-left: 32px;
+margin-top: -70px;
+}
+
+.x-box__container {
+  display: block;
+  position: relative;
+  width: 460px;
+height: 456px;
+background-image: url(../img/yellowZ.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.image__x-box, .image__playstation {
+  position: absolute;
+  width: 296px;
+height: 351px;
+left: 164px;
+top: 23px;
+}
+
+.playstation__container {
+  display: block;
+  position: absolute;
+  width: 460px;
+height: 456px;
+  background-image: url(../img/blueZ.png);
+  background-size: cover;
+background-repeat: no-repeat;
+margin-left: 340px;
+z-index: 0;
+}
+
+.image__playstation {
+  position: relative;
+  width: 296px;
+height: 351px;
+left: 152px;
+top: 23px;
+}
+
+.background__black-yellow {
+  position: relative;
+  top: -7px;
+}
+
+
+.section-yellow {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 681px;
+  background-color: #F8F200;
+  top: -11px;
+}
+
+.yellow__container {
+  display: flex;
+  position: relative;
+width: 100%;
+height: 100%;
+flex-direction: row ;
+gap: 32px;
+}
+
+.yellow__left-section {
+display: inline-flex;
+  position: relative;
+  width: 624px;
+  height: 100%;
+  flex-direction: column;
+top: 75px;
+}
+
+.monitor {
+  width: 624px;
+  margin-bottom: 26px;
+}
+
+.yellow__small-img {
+  display: flex;
+  position: relative;
+  gap: 25px;
+  align-items: center;
+  left: 42px;
+}
+
+.hp__img {
+  width: 80px;
+height: 80px;
+}
+
+.x__img {
+  height: 19.183px;
+width: 90px;
+}
+
+.logo {
+  width: 319.991px;
+height: 79.448px;
+}
+
+.yellow__right-section {
+  display: flex;
+position: relative;
+  width: 626px;
+height: 526px;
+top: 75px;
+}
+
+.yellow__decription-list {
+  list-style: none;
+}
+
+.yellow__description-items {
+  display: flex;
+  color: #000;
+
+}
+
+.yellow__title {
+font-family: Archangelsk;
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 25px;
+}
+
+.yellow__decription-items-text {
+  font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 188.889% */
+margin-bottom: 15px;
+}
+
+.lable {
+  width: 32px;
+height: 32px;
+margin-right: 10px;
+}
+
+.lable__text {
+  display: flex;
+  position: relative;
+  top: 5px;
+  font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 26px;
+}
+
+.more-detail {
+  background-color: #000;
+  text-align: center;
+  height: 59px;
+  padding: 15px 50px;
+  align-items: center;
+  color: #F8F200;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  position: relative;
+flex-direction: row;
+  top: -11px;
+  width: 100%;
+}
+
+.bottom__picture {
+  position: relative;
+  width: 50%;
+  height: 717px;
+  object-position: left;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.buy__game-container {
+  display: flex;
+  position: relative;
+  left: 0;
+  background-color: #000;
+  width: 50%;
+}
+
+.complectation__list {
+  list-style: none;
+  margin-top: 70px;
+  margin-left: 32px;
+  width: 624px;
+}
+.complectation__items {
+  display: flex;
+  color: #FFF;
+
+}
+
+.buy__game-title {
+ 
+  font-family: Archangelsk;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.complectation__icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.complectation__description {
+  color: #52BEDC;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.complectation__text {
+  display: inline-flex;
+  position: relative;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+top: 5px;
+}
+.complectation__description-bottom {
+  color: #52BEDC;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 55px;
+  margin-bottom: 24px;
+}
+
+.platform__btn {
+list-style: none;
+background-color: transparent;
+border: none;
+margin-right: 80px;
+margin-bottom: 46px;
+cursor: pointer;
+}
+
+.footer__list {
+ display: flex;
+ list-style: none;
+ height: 100px;
+}
+
+.footer__logo {
+  width: 295.991px;
+height: 73.489px;
+margin-right: 32px;
+}
+
+.footer__cd-project-logo {
+  width: 172.05px;
+height: 74px;
+margin-right: 390px;
+}
+
+.footer__licence,
+.footer__confidence {
+  display: flex;
+  position: relative;
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 32px;
+  text-wrap: nowrap;
+  text-decoration: none;
+ top: 40%;
+ transform: translateY(-50%);
+}
+
+.footer__privecy {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+top: -11px;
+}
+
+
+@media(max-width: 1024px) {
+  .header__img {
+    max-width:1024px;
+  }
+
+  .title__text{
+ width: 620px;
+ margin-bottom: 25px;
+  }
+
+  .discription__container {
+    width: 788px;
+  }
+
+  .img__container {
+    display: block;
+    width: 952px;
+    height: 100%;
+   top: 30px;
+   margin-bottom: 70px;
+  }
+
+  .img__container-small {
+    flex-direction: row;
+  }
+  .big__img {
+
+    width: 952px;
+height: 424px;
+margin-top: 32px;
+  }
+
+  .play-and-win {
+      height: 1023px;
+    }
+
+    .promoution__title {
+      display: block;
+      width: 460px;
+      margin-top: 35px;
+      left: 0;
+    
+      }
+
+      .discription-black {
+        width: 445px;
+        height: 159px;
+        margin-top: 9px;
+      }
+
+      .add-screan::after {
+        top: 40%;
+      }
+
+      .formats-files {
+        display: none;
+      }
+
+      .images-of-game-box {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 460px;
+      height: 100%;
+      top: -400px;
+      }
+      
+      .playstation__container {
+        display: flex;
+position: absolute;
+top: 400px;
+right: -11px;
+      }
+
+      .section-yellow {
+        height: 826px;
+      }
+      
+      .monitor {
+        width: 460px;
+height: 317px;
+        margin-top: 67px;
+      }
+      
+      .yellow__small-img {
+        display: flex;
+flex-direction: column;
+left: -4px;
+gap: 20px;
+      }
+      
+      
+      .logo {
+margin-top: 5px;
+margin-left: 5px;
+      }
+      
+      .yellow__right-section {
+      top: 100px;
+      }
+      
+      .yellow__decription-list {
+        list-style: none;
+      }
+      .yellow__description-items {
+        width: 460px;
+      }
+      .yellow__decription-items-text {
+        width: 455px;
+      }
+
+      .bottom{
+        height: 717px;
+      }
+
+      .bottom__picture {
+        width: 32%;
+        height: 717px;
+      }
+      
+      .buy__game-container {
+        width: 68%;
+      }
+      
+      .footer__cd-project-logo {
+      margin-right: 64px;
+      }       
+}

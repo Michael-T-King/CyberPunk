@@ -1,0 +1,60 @@
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+body {
+/* max-width: 1920px; */
+max-width: 1920px;
+margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+ max-width:1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media(max-width: 1024px) {
+  body {
+    max-width: 1024px;
+    }
+    .container {
+      max-width: 952px;
+    }
+}
